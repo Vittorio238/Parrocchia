@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="segni.css">
+</head>
+<body>
+    <!--
+    - fare la sezione finale della pagina con social e contatti e fare lo style
+    - rivedere i font dei paragrafi
+    - rivedere il responsive
+    -->
+    <div class="hero">
+        <h1 class="hero">Segni</h1>
+        <ul class="hero">
+            <li class="regular"><a href="">Eventi</a></li>
+            <li class="regular"><a href="">Formazione</a></li>
+            <li class="regular"><a href="">Catechismo</a></li>
+            <li class="regular"><a href="">Comunità</a></li>
+            <li class="regular"><a href="">Orari</a></li>
+            <li id="vip"><a href="homepage.html">Home</a></li>
+        </ul>
+        <div class="responsive">
+            <button title="menu" class="responsive" onclick="toggleMenu()">
+                <img src="menudrop.png" alt="" class="responsive">
+            </button>
+            <ul class="responsive" id="menuDropdown">
+                <li><a href=""><p>Eventi</p></a></li>
+                <li><a href=""><p>Formazione</p></a></li>
+                <li><a href=""><p>Catechismo</p></a></li>
+                <li><a href=""><p>Comunità</p></a></li>
+                <li><a href=""><p>Orari</p></a></li><br>
+                <li><a href="homepage.html"><p>Home</p></a></li>
+            </ul>
+        </div>
+        <img src="sangiuseppehero.jpg" alt="" class="hero">
+        <img src="sangiuseppehero916.jpg" alt="" class="hero flex" id="head">        
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menuDropdown");
+            var immagine = document.getElementById("head");
+
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+                immagine.style.opacity = "1";
+            } else {
+                menu.style.display = "block";
+                immagine.style.opacity = "0.3";
+            }
+        }
+
+
+    </script>
+
+    <div class="red">
+        <h1 class="red">Scarpe rosse</h1>
+        <div class="shoes">
+            <p class="red shoes">Le Scarpette Rosse, nate nel 2009 da un’idea dell’artista messicana Elina Chauvet come installazione per denunciare gli abusi sulle donne e il femminicidio, sono diventate il simbolo della lotta per i diritti delle donne e contro la violenza di genere.</p>
+            <center>
+                <p class="red shoes" id="block">Le Scarpette Rosse, nate nel 2009 da un’idea dell’artista messicana Elina Chauvet come installazione per denunciare gli abusi sulle donne e il femminicidio, sono diventate il simbolo della lotta per i diritti delle donne e contro la violenza di genere.</p>
+            </center>
+            <img src="https://parrocchiasangiuseppenomentana.wordpress.com/wp-content/uploads/2024/08/1724406808462978.png?strip=info&w=960" alt="" class="red shoses" id="smaller">
+        </div>
+        <div class="dress">
+            <p class="red dress">Da alcuni mesi è stata realizzata un’installazione accanto all’altare della Beata Vergine Maria, è stato posto un drappo rosso con un paio di scarpe rosse e una preghiera a ricordo di tutte le donne vittime di violenza.</p>
+            <img src="https://parrocchiasangiuseppenomentana.wordpress.com/wp-content/uploads/2024/08/immagine.jpg?strip=info&w=1500" alt="" class="red dress">
+        </div>
+    </div>
+
+    <div class="green">
+        <h1 class="green">Lanterne verdi</h1>
+        <div class="greenflex">
+            <div class="green lanterne">
+                <p class="green">
+                    Al confine tra la Polonia e la Bielorussia si sta compiendo l’ennesimo dramma dell’umanità.
+        
+                    Ancora una volta risuonano le parole del Vangelo di Luca «<span style="font-style: italic;">non c’era posto per loro</span>».
+        
+                    In silenzio e con coraggio molti hanno deciso di fare della propria casa un rifugio e un luogo di cura e accoglienza. La lanterna verde indica questi santuari dell’umanità.
+        
+                    L’installazione del presepe di querst’anno vuole rappresentare questa situazione.
+        
+                    Siamo invitati a fare altrettanto attraverso la memoria e l’impegno personale.
+                </p>
+                <img src="https://parrocchiasangiuseppenomentana.wordpress.com/wp-content/uploads/2021/12/luce1.jpeg?strip=info&w=900" alt="" class="green">
+                <img src="https://parrocchiasangiuseppenomentana.wordpress.com/wp-content/uploads/2021/12/luce2.jpeg?strip=info&w=900" alt="" class="green">
+            </div>
+            <div class="green more">
+                <h2 class="green more">Per approfondire</h2>
+                <a href="https://www.betharram.it/proposte/mettiamo-una-lanterna-verde-nel-presepio/" class="green more">Mettiamo una lanterna verde nel presepio</a>
+                <a href="https://www.avvenire.it/opinioni/pagine/il-direttore-risponde-migranti-lanterne-verdi-mano-tesa" class="green more">Profughi, i gesti possibili nella notte d’Europa: mano tesa e Lanterne Verdi accese
+                </a>
+                <a href="https://parrocchiasangiuseppenomentana.wordpress.com/natale-2021/#" class="green more"><span style="font-style: italic;">Solidarietà</span><br> Lanterne verdi su Avvenire</a>
+                <a href="https://www.avvenire.it/mondo/pagine/e-morta-cosi-avin-irfan-zahir" class="green more">Donna curda incinta muore al confine tra Polonia e Bielorussia
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="end">
+        <div class="end contacts">
+           <div class="contacts flex">
+                <h1 class="contacts">Contatti</h1>
+
+                <p class="contactsflex"><span style="font-weight: bold;">Mail: </span>sangiuseppe.nomentana@gmail.com</p>
+
+                <p class="contactsflex"><span style="font-weight: bold;">Numero di telefono: </span>06 4402356</p>
+
+                <p class="contactsflex"><span style="font-weight: bold;">IBAN IT: </span>89Y0200805109000005272974</p>
+            </div>
+        </div>        
+        <div class="end place">
+                <div class="place flex">
+                    <h1 class="place">Dove siamo</h1>
+
+                    <div class="place flexII">
+                        <p class="placeflex"><span style="font-weight: bold;">Indirizzo: </span>Via Francesco Redi, 1 <br> 00161 Roma</p>
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.0317602443815!2d12.505869075183236!3d41.913675963187444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6172ead0328d%3A0x57c6302e95e95ead!2sVia%20Francesco%20Redi%2C%201%2C%2000161%20Roma%20RM!5e0!3m2!1sit!2sit!4v1733664814126!5m2!1sit!2sit" width="60%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    
+                </div>
+        </div>
+
+        <div class="end social"> <!--backgroung-color: #897248;-->
+            <div class="social flex">
+                <h2 class="social">Seguici sui social</h2>
+
+                <div class="social flexII">
+                    <button onclick="window.location.href='https:www.instagram.com/parrocchiasang/';" title="Instagram" class="socialflex">
+                        <img class="socialflex instagram" src="instaLogoWhite.png" width="60px" alt="">
+                        <a href="segni.html"></a>
+                    </button>
+    
+                    <button onclick="window.location.href='https:www.facebook.com/parrocchiasangiuseppecrl/?ref=bookmarks'" title="Facebook" class="socialflex">
+                        <img class="socialflex facebook" src="facebookLogoWhite.png" width="30px" alt="">
+                    </button>
+    
+                    <button onclick="window.location.href='https:parrocchiasangiuseppenomentana.wordpress.com/natale-2021/?share=twitter&nb=1'" title="X" class="socialflex">
+                        <img class="socialflex x" src="xLogoWhite.png" width="40px" alt="">
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
