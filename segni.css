@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 * {
     transition: 0.2s ease-out;
 }
@@ -88,7 +89,7 @@ ul#menuDropdown a {
 ul#menuDropdown a:hover {
     translate: 10px;
 }
-
+/*------------end universal------------*/
 
 
 div.red, div.green {
@@ -197,7 +198,7 @@ a.more {
 }
 
 
-
+/*------------satrt universal-------------*/
 div.end {
     padding: 80px;
 }
@@ -246,14 +247,8 @@ div.social:hover {
     border-radius: 30px;
     scale: 1.03;
 }
-
+/*--------------end universal----------------*/
 @media screen and (max-width: 900px) {
-    div.greenflex {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: space-between;
-    }
     div.red div.shoes, div.red div.dress {
         background: none;
         background: linear-gradient(#C4493F, #86261e);
@@ -264,6 +259,13 @@ div.social:hover {
         background: linear-gradient(#1c1c1c, #101010);
         box-shadow: 0px 0px 10px 2px #C4493F inset;
         scale: 0.9;
+    }
+
+    div.greenflex {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-between;
     }
     div.green div.lanterne {
         margin-right: 0px;
@@ -283,19 +285,21 @@ div.social:hover {
     a.more {
         margin-top: 20px;
     }
-    div.place iframe {
+
+    div.place iframe {/*universal*/
         width: 100%;
     }
 }
 
 @media screen and (max-width: 700px) {
+    h1, h2 {
+        margin-top: 0px;
+    }
+
     div.red, div.green {
         margin: 0px;
         border-radius: 0px;
         padding: 30px;
-    }
-    h1, h2 {
-        margin-top: 0px;
     }
     p.shoes {
         padding-right: 50px;
@@ -312,37 +316,20 @@ div.social:hover {
 }
 
 @media screen and (max-width: 560px) {
-    img.hero {
+    
+    ul.hero {
         display: none;
     }
-    img.flex {
-        display: block;
+    img.hero {
+        display: none;
     }
     h1.hero {
         margin-top: 10px;
         margin-left: 33%;
         font-size: 300%;
-        color: white;
     }
-    div.red div {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 10px 0px 30px 0px;
-        justify-content: center;
-    }
-    p.shoes, p.dress {
-        text-align: center;
-        margin-left: 45px;
-    }
-    p.dress {
-        padding: 10px 0px 30px 0px;
-        margin-right: 45px;
-    }
-    img.red, img#smaller {
-        width: 80%;
-    }
-    ul.hero {
-        display: none;
+    img.flex {
+        display: block;
     }
     button.responsive {
         display: block;
@@ -361,8 +348,27 @@ div.social:hover {
         margin-top: 80px;
         font-size: 20px;
     }
+/*-----------------end universal--------------*/
 
-    div.end {
+    div.red div {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 0px 30px 0px;
+        justify-content: center;
+    }
+    p.shoes, p.dress {
+        text-align: center;
+        margin-left: 45px;
+    }
+    p.dress {
+        padding: 10px 0px 30px 0px;
+        margin-right: 45px;
+    }
+    img.red, img#smaller {
+        width: 80%;
+    }
+
+    div.end {/*universal*/
         padding: 20px;
     }
 }
