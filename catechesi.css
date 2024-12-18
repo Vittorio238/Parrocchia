@@ -17,10 +17,14 @@ div.main {
     max-width: 1024px;
     margin-top: -4px;
 }
+div.hero {
+    background-color: black;
+}
 img.hero {
     width: 100%;
     filter: brightness(1.3);
     margin-top: -7px;
+    margin-bottom: -4px;
 }
 img.flex {
     display: none;
