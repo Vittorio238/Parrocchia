@@ -16,7 +16,7 @@ body {
 div.main {
     max-width: 1024px;
     text-align: left;
-    margin-top: -4px;
+    margin-top: 0px;
 }
 div.hero {
     background-color: black;
@@ -30,7 +30,7 @@ img.hero {
 img.flex {
     display: none;
 }
-h1.hero {
+h1.hero, h3.hero {
     font-family: Georgia, 'Times New Roman', Times, serif;
     /*text-align: center;*/
     font-size: 600%;
@@ -261,9 +261,8 @@ div.social:hover {
 /*--------------end universal----------------*/
 
 @media screen and (max-width: 900px) {
-    div.red div.shoes:active, div.red div.dress:active {
+    div.red div.shoes:hover, div.red div.dress:hover {
         border: 2px solid red;
-        background: linear-gradient(#1c1c1c, #101010);
         box-shadow: 0px 0px 10px 2px #C4493F inset;
         scale: 0.9;
     }
@@ -278,9 +277,8 @@ div.social:hover {
         margin-right: 0px;
         margin-bottom: 30px;
     }
-    div.green div.lanterne:active, div.green div.more:active {
+    div.green div.lanterne:hover, div.green div.more:hover {
         border: 2px solid green;
-        background: linear-gradient(#1c1c1c, #101010);
         box-shadow: 0px 0px 10px 2px #82D67F inset;
         scale: 0.9;
     }
@@ -326,7 +324,10 @@ div.social:hover {
 }
 
 @media screen and (max-width: 560px) {
-    
+    div.hero {
+        display: flex;
+        justify-content: center;
+    }
     ul.hero {
         display: none;
     }
@@ -335,7 +336,7 @@ div.social:hover {
     }
     h1.hero {
         margin-top: 10px;
-        margin-left: 33%;
+        margin-left: -5px;
         font-size: 300%;
     }
     img.flex {
@@ -380,5 +381,9 @@ div.social:hover {
 
     div.end {/*universal*/
         padding: 20px;
+    }
+    
+    div.contacts, div.place {
+        margin-left: -20px;
     }
 }

@@ -249,7 +249,10 @@ div.social:hover {
 }
 
 @media screen and (max-width: 560px) {
-    
+    div.hero {
+        display: flex;
+        justify-content: center;
+    }
     ul.hero {
         display: none;
     }
@@ -258,7 +261,7 @@ div.social:hover {
     }
     h1.hero {
         margin-top: 10px;
-        margin-left: 33%;
+        margin-left: -5px;
         font-size: 300%;
     }
     img.flex {

@@ -107,51 +107,74 @@ li#vip:hover {
     scale: 1.1;
 }
 /*------------end universal------------*/
-button.fidanzati, button.cresimaold {
-  all: unset;
-  padding: 10px 30px;
-  margin: 10px 30px;
-  border: 1px solid grey;
-  border-radius: 40px;
-  cursor: pointer;
-  background: linear-gradient(to top right, #fff 40%, #faebd7 30%, #faebd7 30%);
-  background-size: 100% 200%; /* Raddoppia lo spazio verticale */
-  background-position: 0 0; /* Posizione iniziale */
-}
-button.fidanzati:hover, button.cresimaold:hover {
-  scale: 1.1;
-  transition: 0.2s ease-out;
-  background-position: 0 100%; /* Sposta la striscia bianca in alto */
-}
-a.fidanzati, a.cresimaold {
-  color: black;
-  text-decoration: none;
-}
-a.fidanzati:hover, a.cresimaold:hover {
-  text-decoration: underline;
+
+div.sostieni {
+  margin-top: 60px;
 }
 
-h1.fidanzati, h1.cresimaold {
-  padding-top: 50px;
-}
-img.fidanzati, img.cresimaold {
-  width: 70%;
-  padding: 10px 0px;
-  padding-bottom: 30px;
-}
-p.fidanzati, p.cresimaold {
-  margin: 10px 50px;
-  margin-bottom: 30px;
-}
-div.button {
+div.adotta {
+  text-align: center;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: center; /* Allinea al centro orizzontalmente */
+  justify-content: center; /* Centra verticalmente */
+}
+div.adottaflex {
+  margin: 30px;
+}
+img.adotta {
+  width: 40%;
+  height: 40%;
+  padding-left: 30px;
+}
+h2.adotta {
+  padding-top: 20px;
+}
+p.adotta {
+  font-weight: lighter;
+  max-width: 300px;
+  padding-right: 30px;
+}
+
+
+div.carita {
+  padding: 80px 50px;
+  border-top: 1px solid #897248;
+  text-align: left;
+}
+div.italic {
+  margin: 0 100px;
+  margin-top: 40px;
+  padding: 10px;
+  border-left: 4px solid #897248;
+}
+img.carita {
+  margin: 60px 0;
+  width: 80%;
+  min-width: 400px;
+}
+
+
+
+div.flex  {
+  display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
-div.cresimaold {
-  margin-bottom: 50px
+div.spesa p {
+  width: 400px;
+  margin-right: 50px;
+  margin-bottom: 30px;
 }
+div.spesa img{
+  width: 30%;
+  min-width: 240px;
+}
+
+div.mercato div.flex {
+  margin-bottom: 50px;
+}
+
 /*------------satrt universal-------------*/
 
 div.end {
@@ -166,7 +189,7 @@ div.end h1, h2 {
   padding-bottom: 0px;
 }
 div.place div.flexII {
-  margin-left: -10px;
+  margin-left: -10px; 
   display: flex;
   justify-content: space-between;   
   flex-wrap: wrap; 
@@ -211,9 +234,31 @@ div.social:hover {
   div.place p.placeflex {
       margin: -20px 0px 70px 0px;
   }
+  div.italic {
+    margin: 0 60px;
+  }
+
   div.place iframe {
       width: 100%;
       margin-top: -40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  div.adotta {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  p.adotta {
+    padding-right: 0;
+  }
+  img.adotta {
+    width: 70%;
+    padding-left: 0;
+  }
+  
+  div.italic {
+    margin: 0 30px;
   }
 }
 
@@ -221,7 +266,7 @@ div.social:hover {
   div.hero {
     display: flex;
     justify-content: center;
-  }  
+  }
   ul.hero {
       display: none;
   }
@@ -255,10 +300,17 @@ div.social:hover {
   }
 /*-----------------end universal--------------*/
 
+  div.carita img {
+    width: 100%;
+  }
+
+  div.italic {
+    margin: 0;
+  }
+
   div.end {/*universal*/
       padding: 20px;
   }
-
   
   div.contacts, div.place {
     margin-left: -20px;
