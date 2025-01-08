@@ -157,32 +157,37 @@ div.meetingflexI img {
 }
 
 /* Seconda sezione */
-div.meetingflexII {
+div.meetingflex {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
     margin: 40px;
+    perspective: 800px; /* Aggiunge profondità per un effetto più realistico */
 }
-div.meetingflexII img {
+div.meetingflex img {
     width: 30%;
-    padding: 30px 0px;
+    margin: 10px 0px;
+}
+div.meetingflex img:hover {
+    transform: rotatey(10deg) rotatex(10deg);
+    scale: 1.1;
+    transform-origin: center;
+    box-shadow: 0px 0px 30px 10px;
 }
 
-/* Frecce */
-div.meetingflexII img.arrow {
-    filter: invert(1);
-    margin: 0px -100px;
-    width: 50px !important; /* Larghezza desiderata */
-    height: 50px !important; /* Altezza proporzionale */
-    object-fit: contain; /* Mantiene le proporzioni originali */
+div.lastflex {
+    background: linear-gradient(to bottom left, #ee82eea8, #fa3efaa8);
+    padding: 20px 0;
+    width: 100%;
+    margin-left: 0;
+}
+h1.lastflex {
+    background-color: #ee82eea8;
+    margin: -40px 0;
+    margin-top: 30px;
 }
 
-/* Terza sezione */
-div.meetingflexIII img {
-    width: 70%;
-    margin: auto;
-}
 
 /*------------satrt universal-------------*/
 div.end {
@@ -235,6 +240,12 @@ div.social:hover {
 }/*--------------end universal----------------*/
 
 @media screen and (max-width: 900px) {
+
+    div.meetingflex img {
+        width: 30%;
+        margin: 30px 0px;
+    }
+
     /*-----------------universal-------------------*/
     div.place div.flexII {
         display: block;
@@ -247,6 +258,7 @@ div.social:hover {
         margin-top: -40px;
     }
 }
+
 
 @media screen and (max-width: 560px) {
     div.hero {
@@ -285,6 +297,20 @@ div.social:hover {
         font-size: 20px;
     }
 /*-----------------end universal--------------*/
+    div.head {
+        margin: 0 40px;
+    }
+
+    h1.familiare {
+        margin: -60px -30px 10px -30px;
+        font-size: 40px;
+    }
+
+    
+    div.meetingflex img {
+        width: 80%;
+        margin: 30px 0px;
+    }
 
     div.meeting img {
         width: 80%;

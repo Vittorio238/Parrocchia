@@ -33,7 +33,7 @@ img.flex {
 h1.hero {
     font-family: Georgia, 'Times New Roman', Times, serif;
     /*text-align: center;*/
-    font-size: 600%;
+    font-size: 80px;
     margin-left: 40px;/*diminuire percentage per teblet*/
     margin-top: 100px;
     position: absolute;
@@ -98,6 +98,10 @@ h1, h2 {
 }
 /*------------end universal------------*/
 
+h1.hero {
+    margin-bottom: -30px;
+}
+
 div.about:hover, div.news:hover {
     background: linear-gradient(to top right, #c7c0b7, #ffe5c3);
     scale: 1.02;
@@ -108,7 +112,7 @@ div.about {
     border: 1px solid grey;
     text-align: left;
     padding: 40px;
-    margin: 50px 0px;
+    margin: 50px 50px;
 }
 h1.about {
     text-align: center;
@@ -123,8 +127,9 @@ div.aboutflex {
     align-items: center;
 }
 p.aboutus {
-    width: 40%;
+    width: 80%;
     padding: 0px 40px;
+    margin-bottom: 50px;
 }
 img.aboutus {
     width: 40%;
@@ -136,7 +141,7 @@ img.aboutus {
 div.news {
     border: 1px solid grey;
     padding: 50px;
-    margin: 50px 0px;
+    margin: 50px 50px;
 }
 h2.news {
     text-align: center;
@@ -149,7 +154,7 @@ p.news {
     margin: 40px 20px;
     text-align: center;
     width: 33%;
-    min-width: 250px;
+    min-width: 200px;
 }
 a.news {
     color: black;
@@ -159,6 +164,8 @@ a.news {
 /*------------satrt universal-------------*/
 div.end {
     margin-bottom: 60px;
+    padding-top: 30px;
+    border-top: 1px solid black;
 }
 div.end div {
     padding: 15px 30px;

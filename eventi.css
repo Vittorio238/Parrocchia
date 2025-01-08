@@ -109,52 +109,30 @@ li#vip:hover {
 }
 /*------------end universal------------*/
 
-button.fidanzati, button.cresimaold {
-  all: unset;
-  padding: 10px 30px;
-  margin: 10px 30px;
-  border: 1px solid grey;
-  border-radius: 40px;
-  cursor: pointer;
-  background: linear-gradient(to top right, #fff 40%, #faebd7 30%, #faebd7 30%);
-  background-size: 100% 200%; /* Raddoppia lo spazio verticale */
-  background-position: 0 0; /* Posizione iniziale */
+div.news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-button.fidanzati:hover, button.cresimaold:hover {
-  scale: 1.1;
+div.news div {
+  width: 45%;
+  margin: 20px;
+  background-color: #fdf3e7;
+  padding: 20px 0;
+  background: linear-gradient(to top right, #fdf3e7 1%, #fff 40%, #fdf3e7 59%);
+}
+
+div.news div:hover {
+  background-size: 200% 200%; /* Raddoppia lo spazio verticale */
+  background-position: 0 0; /* Posizione iniziale */
   transition: 0.2s ease-out;
   background-position: 0 100%; /* Sposta la striscia bianca in alto */
-}
-a.fidanzati, a.cresimaold {
-  color: black;
-  text-decoration: none;
-}
-a.fidanzati:hover, a.cresimaold:hover {
-  text-decoration: underline;
+  scale: 1.03;
 }
 
-h1.fidanzati, h1.cresimaold {
-  padding-top: 50px;
+img.nuovo {
+  max-width: 150px;
 }
-img.fidanzati, img.cresimaold {
-  width: 70%;
-  padding: 10px 0px;
-  padding-bottom: 30px;
-}
-p.fidanzati, p.cresimaold {
-  margin: 10px 50px;
-  margin-bottom: 30px;
-}
-div.button {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-div.cresimaold {
-  margin-bottom: 50px
-}
-
 
 /*------------satrt universal-------------*/
 div.end {
@@ -220,12 +198,28 @@ div.social:hover {
   }
 }
 
+@media screen and (max-width: 800px) {
+  div.news {
+    margin: 0;
+  }
+
+
+  div.news div {
+    width: 100%;
+    margin: 20px 40px;
+  }
+  
+p.testo {
+  margin: 10px 30px;
+}
+
+}
 
 @media screen and (max-width: 560px) {
   div.hero {
-    display: flex;
-    justify-content: center;
-  }  
+      display: flex;
+      justify-content: center;
+  }
   ul.hero {
       display: none;
   }
@@ -259,12 +253,18 @@ div.social:hover {
   }
 /*-----------------end universal--------------*/
 
-  div.end {/*universal*/
-      padding: 20px;
-  }
 
-  
-  div.contacts, div.place {
-    margin-left: -20px;
-  }
+img.nuovo {
+  width: 100%;
+  max-width: none;
+  margin-top: -20px;
+}
+
+div.end {/*universal*/
+  padding: 20px;
+}
+
+div.contacts, div.place {
+  margin-left: -20px;
+}
 }
