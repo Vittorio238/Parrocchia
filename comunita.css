@@ -314,6 +314,10 @@ div.social:hover {
   div.italic {
     margin: 0 30px;
   }
+  
+  li.regular, #vip {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 560px) {
@@ -344,9 +348,9 @@ div.social:hover {
   }
 
   h1.hero {
-    margin-top: 10px;
+    margin-top: 25px;
     margin-left: -5px;
-    font-size: 300%;
+    font-size: 35px;
   }
 
   img.flex {

@@ -15,7 +15,7 @@ body {
 }
 div.main {
     max-width: 1024px;
-    text-align: left;
+    text-align: center;
     margin-top: 0px;
 }
 div.hero {
@@ -122,7 +122,7 @@ button.fidanzati, button.cresimaold {
 }
 button.fidanzati:hover, button.cresimaold:hover {
   scale: 1.1;
-  transition: 0.2s ease-out;
+  transition: all 0.2s ease-out;
   background-position: 0 100%; /* Sposta la striscia bianca in alto */
 }
 a.fidanzati, a.cresimaold {
@@ -220,6 +220,15 @@ div.social:hover {
   }
 }
 
+@media screen and (max-width: 750px) {
+  h1.hero {
+    font-size: 50px;
+  }
+
+  li.regular, #vip {
+    font-size: 15px;
+  }
+}
 
 @media screen and (max-width: 560px) {
   div.hero {
@@ -233,9 +242,9 @@ div.social:hover {
       display: none;
   }
   h1.hero {
-      margin-top: 10px;
+      margin-top: 25px;
       margin-left: -5px;
-      font-size: 300%;
+      font-size: 30px;
   }
   img.flex {
       display: block;

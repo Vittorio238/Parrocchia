@@ -321,6 +321,9 @@ div.social:hover {
     img#smaller {
         width: 45%;
     }
+    li.regular, #vip {
+      font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 560px) {

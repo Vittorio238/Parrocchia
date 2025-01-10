@@ -255,6 +255,15 @@ div.social:hover {
     }
 }
 
+@media screen and (max-width: 750px) {
+    h1.hero {
+      font-size: 50px;
+    }
+  
+    li.regular, #vip {
+      font-size: 15px;
+    }
+  }
 
 @media screen and (max-width: 560px) {
     div.hero {
@@ -269,9 +278,10 @@ div.social:hover {
     }
     h1.hero {
         margin-top: 10px;
-        margin-left: -5px;
-        font-size: 300%;
+        font-size: 25px;
+        text-align: center;
     }
+
     img.flex {
         display: block;
     }

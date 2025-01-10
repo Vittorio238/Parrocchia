@@ -109,6 +109,64 @@ li#vip:hover {
 }
 /*------------end universal------------*/
 
+h1.first {
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+div.date {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 30px;
+  flex-wrap: wrap;
+}
+
+div.date div {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 0px 10px 10px inset white;
+  padding: 10px 40px 20px 0;
+  margin: 10px;
+}
+
+div.date ul {
+  list-style: none;
+  text-align: center;
+}
+
+li.titles {
+  text-align: left;
+}
+
+li.top, ul.orari {
+  margin-top: 15px;
+}
+
+ul.orari {
+  margin-top: 50px;
+  margin-left: -40px;
+}
+
+li.days {
+  margin-left: 50px;
+}
+
+li.shorter {
+  margin-left: 60px;
+}
+
+div.sabato ul.orari, div.domenica ul.orari {
+  margin-left: -20px;
+}
+
+div.date i.italic {
+  margin: 40px;
+  margin-right: 0;
+}
+
+
+
 div.news {
   display: flex;
   flex-wrap: wrap;
@@ -123,9 +181,9 @@ div.news div {
 }
 
 div.news div:hover {
-  background-size: 200% 200%; /* Raddoppia lo spazio verticale */
+  background-size: 250% 250%; /* Raddoppia lo spazio verticale */
   background-position: 0 0; /* Posizione iniziale */
-  transition: 0.2s ease-out;
+  transition: all 0.2s ease-out;
   background-position: 0 100%; /* Sposta la striscia bianca in alto */
   scale: 1.03;
 }
@@ -213,8 +271,10 @@ p.testo {
   margin: 10px 30px;
 }
 
+li.regular, #vip {
+  font-size: 15px;
 }
-
+}
 @media screen and (max-width: 560px) {
   div.hero {
       display: flex;
@@ -252,6 +312,15 @@ p.testo {
       font-size: 20px;
   }
 /*-----------------end universal--------------*/
+
+h1.first, div.date {
+  text-align: center;
+  margin-left: 0;
+}
+
+div.date div {
+  margin-left: 50px;
+}
 
 
 img.nuovo {
