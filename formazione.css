@@ -159,6 +159,7 @@ div.cresimaold {
 /*------------satrt universal-------------*/
 div.end {
   margin-bottom: 60px;
+  text-align: left;
 }
 div.end div {
   padding: 15px 30px;
